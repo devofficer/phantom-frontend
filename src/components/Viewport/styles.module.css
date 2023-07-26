@@ -1,0 +1,11 @@
+.viewport {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.viewport > * {
+  margin: 4px 0;
+}
