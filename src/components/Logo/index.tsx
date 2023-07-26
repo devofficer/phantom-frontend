@@ -1,8 +1,8 @@
-import { styled } from "@phntms/css-components";
+import { styled } from '@phntms/css-components';
 
-import css from "./styles.module.css";
+import css from './styles.module.css';
 
-const Logo = styled("h1", {
+const Logo = styled('h1', {
   css: css.logo,
 });
 

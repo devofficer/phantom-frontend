@@ -1,8 +1,8 @@
-import { styled } from "@phntms/css-components";
+import { styled } from '@phntms/css-components';
 
-import css from "./styles.module.css";
+import css from './styles.module.css';
 
-const Button = styled("button", {
+const Button = styled('button', {
   css: css.button
 });
 
