@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import Logo from '@/components/Logo'
-
-const inter = Inter({ subsets: ['latin'] })
+import Button from '@/components/Button'
 
 export default function Home() {
   return (
@@ -15,6 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <Logo>Phantom</Logo>
+        <Button>Generate</Button>
       </main>
     </>
   )
