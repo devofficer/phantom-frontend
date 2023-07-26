@@ -9,6 +9,7 @@ import TextField from '@/components/TextField'
 import StyledImage from '@/components/StyledImage'
 
 import "react-toastify/dist/ReactToastify.css";
+import ImageViewer from '@/components/ImageViewer'
 
 export default function Home() {
   const promptRef = useRef<HTMLInputElement>(null);
@@ -17,7 +18,7 @@ export default function Home() {
 
   const handleGenerate = async () => {
     if(!promptRef.current) return;
-
+    setLoading(true);
     const prompt = promptRef.current.value;
     const response = await customFetch({
       url: '/api/generate',
@@ -29,6 +30,7 @@ export default function Home() {
     } else {
       toast.error("Hmm, something went wrong!");
     }
+    setLoading(false);
   }
 
   return (
@@ -41,7 +43,7 @@ export default function Home() {
       </Head>
       <main>
         <Logo>Phantom</Logo>
-        <StyledImage alt="Generated Image" src={imgUrl} width={640} height={640} />
+        <ImageViewer url={imgUrl} loading={loading} />
         <TextField ref={promptRef} placeholder='Please input prompt to generate image'/>
         <Button onClick={handleGenerate}>Generate</Button>
       </main>
