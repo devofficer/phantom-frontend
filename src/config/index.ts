@@ -1,7 +1,9 @@
 export const properties = [
   ["gender", "opposite"],
-  ["personality traits", "opposite"],
+  ["era", "opposite"],
   ["job", "opposite"],
+  ["environment", "opposite"],
+  ["century", "opposite"],
   ['action', 'opposite'],
   ['tool', 'opposite']
 ]
