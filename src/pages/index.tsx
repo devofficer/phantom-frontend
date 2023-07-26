@@ -3,9 +3,10 @@ import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import TextField from '@/components/TextField'
 import StyledImage from '@/components/StyledImage'
-import Viewport from '@/components/Viewport'
 
 export default function Home() {
+
+
   return (
     <>
       <Head>
@@ -15,12 +16,10 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
-        <Viewport>
-          <Logo>Phantom</Logo>
-          <StyledImage alt="Generated Image" src="/logo.png" width={640} height={640} />
-          <TextField placeholder='Please input prompt to generate image'/>
-          <Button>Generate</Button>
-        </Viewport>
+        <Logo>Phantom</Logo>
+        <StyledImage alt="Generated Image" src="/logo.png" width={640} height={640} />
+        <TextField placeholder='Please input prompt to generate image'/>
+        <Button>Generate</Button>
       </main>
     </>
   )
