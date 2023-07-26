@@ -32,12 +32,13 @@ export default async function handler(
       temperature: 0.7,
     });
 
-    const imagePrompt = `${oppositeResponse.data.choices[0].text?.trim() as string}`;
+    const imagePrompt = `digital photo of ${oppositeResponse.data.choices[0].text?.trim() as string}`;
     const imageResponse = await replicate.run(FOREVER_MODEL, {
       input: { 
         prompt: imagePrompt,
         width: 640,
-        height: 640
+        height: 640,
+        seed: 1335
       },
     });
 
