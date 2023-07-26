@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import TextField from '@/components/TextField'
+import StyledImage from '@/components/StyledImage'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Logo>Phantom</Logo>
         <Button>Generate</Button>
         <TextField placeholder='Please input prompt to generate image'/>
+        <StyledImage alt="Generated Image" src="/logo.png" width={640} height={640} />
       </main>
     </>
   )
