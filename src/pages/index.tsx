@@ -6,10 +6,9 @@ import Head from 'next/head'
 import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import TextField from '@/components/TextField'
-import StyledImage from '@/components/StyledImage'
+import ImageViewer from '@/components/ImageViewer'
 
 import "react-toastify/dist/ReactToastify.css";
-import ImageViewer from '@/components/ImageViewer'
 
 export default function Home() {
   const promptRef = useRef<HTMLInputElement>(null);
