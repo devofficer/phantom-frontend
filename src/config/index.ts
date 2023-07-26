@@ -4,5 +4,5 @@ export const properties = [
   ["job", "opposite"],
   ["era", "opposite"],
   ['action', 'opposite'],
-  ['century', 'opposite']
+  ['equipment', 'opposite']
 ]

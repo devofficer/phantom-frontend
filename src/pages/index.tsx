@@ -45,7 +45,7 @@ export default function Home() {
         <Logo>Phantom</Logo>
         <ImageViewer url={imgUrl} loading={loading} />
         <TextField ref={promptRef} placeholder='Please input prompt to generate image'/>
-        <Button onClick={handleGenerate}>Generate</Button>
+        <Button disabled={loading} onClick={handleGenerate}>Generate</Button>
       </main>
       <ToastContainer />
     </>

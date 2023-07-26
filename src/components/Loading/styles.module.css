@@ -13,8 +13,8 @@
   height: 64px;
   position: absolute;
   background-color: transparent;
-  border: 8px solid white;
-  border-bottom: 2px solid transparent;
+  border: 6px solid white;
+  border-bottom: 6px solid transparent;
   border-radius: 50%;
   animation: rotate 1s ease-in-out infinite;
 }
